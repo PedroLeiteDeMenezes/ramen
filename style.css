@@ -1,0 +1,169 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    padding: 0%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+}
+
+.menu-item{
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.2s ease
+}
+
+.menu-item {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 10px);
+    height: 1px;
+    background-color: black;
+}
+
+.carousel slide{
+    height: 64vh;
+    width: 100%;
+}
+
+.d-block w-100{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product{
+    background-color: gray;
+    height: 64vh;
+    width: 70%;
+    margin: 20px auto; /* Adicionando espaçamento superior e inferior de 20px e centralizando horizontalmente */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Centralizando verticalmente */
+    border-radius: 3%;
+    animation: fadeIn 5s;
+    transition: all 0.2s ease
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:hover{
+    transform: scale(1.1);
+}
+
+.text {
+    margin-right: 30px; /* Adiciona espaço entre o texto e a imagem */
+    text-align: center;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    color: rgb(245, 228, 206);
+    animation: fadeIn 5s;
+    word-wrap: break-word;
+    font-size: 1.2vw; /* Exemplo de tamanho de fonte responsivo */
+}
+
+.text p {
+    margin-bottom: 10px; /* Adiciona espaçamento entre parágrafos */
+}
+
+.title h2 {
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+}
+
+.lamen{
+    height: 100%; /* Alterando a altura para ocupar todo o espaço do .product */
+    max-width: 100%; /* Garantindo que a imagem não ultrapasse a largura do .product */
+    object-fit: cover;
+}
+
+.location {
+    background-color: #F5F5dc ;
+    height: 64vh;
+    width: 70%;
+    margin: 20px auto; /* Adicionando espaçamento superior e inferior de 20px e centralizando horizontalmente */
+    display: flex;
+    align-items: center; /* Centralizando verticalmente */
+    padding: 20px; /* Adicionando preenchimento interno */
+    border-radius: 1%;
+    animation: fadeIn 5s;
+    transition: all 0.2s ease
+}
+
+.location:hover{
+    transform: scale(1.1);
+}
+
+.location-image {
+    max-width: 60%; /* Definindo um tamanho máximo para a largura da imagem */
+    max-height: 80%; /* Definindo um tamanho máximo para a altura da imagem */
+    object-fit: contain; /* Faz a imagem se ajustar proporcionalmente dentro do contêiner */
+}
+
+.text {
+    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.title2{
+    color: #30503a;
+}
+
+.paragraph2{
+    color: #30503a;
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100px; /* Defina uma altura desejada para o footer */
+}
+
+.footer-content {
+    text-align: center; /* Centraliza o texto e os ícones */
+}
+
+.social-links {
+    display: inline-block; /* Permite que os ícones fiquem na mesma linha */
+}
+
+.social-links a {
+    margin: 0 10px; /* Adicione espaço entre os ícones */
+    transition: all 0.2s ease
+}
+
+.social-links:hover{
+    transform: scale(1.1);
+}
+
+.separator {
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de 1px com cor cinza */
+    margin-top: 9px; /* Define o espaçamento entre o footer e o conteúdo do site */
+    width: 100%; /* Garante que a linha se estenda por toda a largura da página */
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
